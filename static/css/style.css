@@ -1,0 +1,274 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #C6E2E9;
+  border-radius: 20px;
+}
+
+.username {
+
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.username label {
+	font-weight: bold;
+	color: #fcfefe;
+	border-radius: 5px;
+	background-color: #57838D;
+	padding: 9px 22px;
+	margin-right: 14px;
+}
+
+.username input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f1f1f1;
+	color: #333;
+}
+
+.username input:hover {
+	background-color: #eaeaea;
+}
+
+.username input:focus {
+	outline: none;
+	box-shadow: 0 0 5px #999;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+.join_token {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.join_token input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f1f1f1;
+	color: #333;
+	
+}
+
+.join_token input:hover {
+	background-color: #eaeaea;
+}
+
+.join_token input:focus {
+	outline: none;
+	box-shadow: 0 0 5px #999;
+}
+
+.join_token button {
+	padding: 9px 35px;
+	border: none;
+	border-radius: 5px;
+	background-color: #4CAF50;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	margin-right: 14px;
+}
+
+.join_token button:hover {
+	background-color: #45A049;
+}
+
+.join_token button:active {
+	background-color: #3e8e41;
+}
+
+.create_btn {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+
+}
+
+.create_token {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.create_token input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f1f1f1;
+	color: #333;
+}
+
+.create_token input:hover {
+	background-color: #eaeaea;
+}
+
+.create_token input:focus {
+	outline: none;
+	box-shadow: 0 0 5px #999;
+}
+
+.create_token button {
+	padding: 9px 21px;
+	border: none;
+	border-radius: 5px;
+	background-color: #4CAF50;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.create_token button:hover {
+	background-color: #45A049;
+}
+
+.create_token button:active {
+	background-color: #3E8341;
+}
+
+.message-box {
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  align-items: center;
+}
+
+.messages {
+  overflow-y: scroll;
+  flex: 1;
+  width: 100%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.inputs input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f1f1f1;
+	color: #333;
+}
+
+.inputs input:hover {
+	background-color: #eaeaea;
+}
+
+.inputs input:focus {
+	outline: none;
+	box-shadow: 0 0 5px #999;
+}
+
+.inputs button {
+	padding: 9px 26px;
+	border: none;
+	border-radius: 5px;
+	background-color: #1E2F97;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.inputs button:hover {
+	background-color: #45A049;
+}
+
+.inputs button:active {
+	background-color: #3E8341;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 46px;
+  color: #2E3332;
+}
+#message {
+  flex: 1;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #2E3332;
+}
+
+.muted {
+  font-size: 20px;
+  color: darkgray;
+}
+
+.error-list {
+	color: white;
+	background-color: #C9888E;
+	padding: 8px;
+	border: 1px solid #dc3545;
+	border-radius: 5px;
+}
+
+.error-list li {
+	list-style-type: none;
+}
+
+.members {
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	background-color: whitesmoke;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	width: 5vw;
+	align-items: left;
+	margin-right: 20px;
+	padding: 0px 20px;
+}
+
+.chat-message strong {
+	background-color: #A7BED3;
+	border-radius: 5px;
+	color: whitesmoke;
+}
+
+.members-names .member-name {
+	background-color: #C9888E;
+	padding: 10px;
+	margin-bottom: 10px;
+}
