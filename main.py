@@ -27,6 +27,10 @@ def home():
         
         if create_btn != False and not create_id:
             return render_template('home.html', error='Insira o ID para criar a sala.', join_id=join_id, create_id=create_id, username=username)
+        
+        if create_id in rooms:
+            return render_template('home.html', error='A sala já existe, tente outro ID.', join_id=join_id, create_id=create_id, username=username)
+
         opt_id = None
         if create_btn != False:
             # adiciona no dicionários de sessões um novo chat
