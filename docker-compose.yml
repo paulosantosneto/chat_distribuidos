@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  flask-instance1:
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    restart: always
+    command: python main.py
+
+  flask-instance2:
+    build:
+      context: .
+    ports:
+      - "5001:5000"
+    restart: always
+    command: python main.py
+
+  nginx-lb:
+    build:
+      context: ./nginx
+    ports:
+      - "80:80"  # Porta 8080 do host mapeada para a porta 80 do contêiner
+    user: root  # Definir o usuário raiz
+    restart: always
+    
